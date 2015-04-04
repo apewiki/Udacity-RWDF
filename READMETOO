@@ -1,0 +1,7 @@
+Media query:
+apply the style only if the width of the screen is over 500px
+1. HTML: <link rel="stylesheet" media = "screen and {min-width: 500px)" href="yes.css">
+2. CSS: @media screen and (min-width: 500px) {
+	body {background-color:green};
+	}
+3. do not use "min-device-width" "max-device-width" for media query

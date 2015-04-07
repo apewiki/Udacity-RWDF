@@ -12,7 +12,7 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-  margin: 0; 
+  margin: 0;
 }
 
 header, nav, footer, section, article, div {
@@ -24,12 +24,33 @@ ul {
   padding: 0;
   margin: 0;
 }
+.nav-hamburger {
 
+}
+
+@media screen and (max-width: 500px) {
+  .hero {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 501px) {
+  .nav-hamburger {
+    display:none;
+  }
+  .hero {
+    width: 60%;
+  }
+  .top-news {
+    float: right;
+    max-width: 40%;
+  }
+}
 
 /*
  *
  * Common
- * 
+ *
  */
 
 .news__more {
@@ -92,13 +113,21 @@ ul {
   margin: 0;
 }
 
+.nav__item1 {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 12%;
+  line-height: 24px;
+  padding: 10px;
+}
+
 .nav__item {
   box-sizing: border-box;
   display: inline-block;
-  width: 24%;
+  width: 20%;
   text-align: center;
   line-height: 24px;
-  padding: 24px;
+  padding: 20px;
   text-transform: uppercase;
 }
 
@@ -141,7 +170,7 @@ main {
  */
 
 .hero {
-  width: 100%;
+  float:left;
   position: relative;
   background-image: url("./images/dog.jpg");
   background-size: cover;
@@ -223,7 +252,7 @@ main {
 
 .scores__table th,
 .scores__table td {
-  padding: 1em; 
+  padding: 1em;
 }
 
 .scores__table th {

@@ -11,7 +11,7 @@
   order: 10;
 }
 
-@media screen and (max-width: 549px) {
+@media screen and (max-width: 599px) {
   .header__logo {
     height: 48px;
     margin-right: 0.5em;
@@ -19,7 +19,7 @@
   .header__title {
     margin-left: 0;
     font-size: 2em;
-    vertical-align: bottom; 
+    vertical-align: bottom;
   }
   .nav {
     z-index: 10;
@@ -54,10 +54,14 @@
   }
 }
 
-@media screen and (min-width: 550px) {
+
+@media screen and (min-width: 600px) {
   .hero {
     order: 0;
     width: 60%;
+  }
+  .hero article {
+    font-size: 0.8em;
   }
   .weather {
     order: 1;
@@ -79,13 +83,20 @@
   }
   .weather {
     order: 3;
+    width: 40%;
   }
 }
 
 @media screen and (min-width: 850px) {
   main, .header__inner, .nav, .content {
-    width: 850px;
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .top-news {
+    font-size: 1.2em;
   }
 }

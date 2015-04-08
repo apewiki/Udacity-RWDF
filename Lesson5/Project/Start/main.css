@@ -7,12 +7,13 @@ body, html {
 
 body {
   font-family: Roboto;
-  font-size: 12px;
+  font-size: 16px;
+  line-height: 1.2em;
   color: #424242;
 }
 
 h1, h2, h3, h4, h5 {
-  margin: 0; 
+  margin: 0;
 }
 
 header, nav, footer, section, article, div {
@@ -29,7 +30,7 @@ ul {
 /*
  *
  * Common
- * 
+ *
  */
 
 .news__more {
@@ -145,7 +146,9 @@ main {
   position: relative;
   background-image: url("./images/dog.jpg");
   background-size: cover;
-  height: 300px;
+  height: 30%;
+  min-height: 300px;
+
 }
 
 .hero article {
@@ -172,6 +175,7 @@ main {
   border-bottom: 1px solid #E0E0E0;
   padding: 1em;
   width: 100%;
+  overflow-y: auto;
 }
 
 .news__title {
@@ -225,7 +229,7 @@ main {
 
 .scores__table th,
 .scores__table td {
-  padding: 1em; 
+  padding: 1em;
 }
 
 .scores__table th {
